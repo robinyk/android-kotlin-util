@@ -1,0 +1,268 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Theme -->
+    <!-- Theme.MaterialComponents.DayNight.NoActionBar.Bridge -->
+    <style name="Ownapp.Theme.DayNight" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Main -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorPrimaryDark">?attr/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">?android:attr/textColorPrimaryInverse</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">?android:attr/textColorPrimary</item>
+
+        <item name="colorAccent">?attr/colorPrimary</item>
+        <item name="android:colorControlActivated">?attr/colorPrimary</item>
+
+        <!-- View -->
+        <item name="colorToolbar">?attr/colorPrimary</item>
+        <item name="colorOnToolbar">?attr/colorOnPrimary</item>
+
+        <item name="colorBackgroundGrey">@color/grey_300</item>
+
+        <!-- Information -->
+        <item name="colorNotification">?attr/colorAlert</item>
+        <item name="colorOnNotification">@color/white</item>
+
+        <item name="colorSuccess">@color/background_success</item>
+        <item name="colorAlert">@color/background_error</item>
+        <item name="colorWarning">@color/yellow_500</item>
+
+        <!-- System -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+
+        <!-- Theme -->
+        <item name="bottomSheetDialogTheme">@style/Ownapp.ThemeOverlay.BottomSheetDialog</item>
+        <item name="materialCalendarTheme">@style/Ownapp.ThemeOverlay.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/Ownapp.ThemeOverlay.MaterialCalendar.Fullscreen</item>
+
+        <!-- Style -->
+        <item name="android:contextPopupMenuStyle" tools:targetApi="n">@style/Widget.MaterialComponents.PopupMenu.ContextMenu</item>
+        <item name="popupMenuStyle">@style/Widget.MaterialComponents.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.MaterialComponents.PopupMenu.Overflow</item>
+
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="toolbarStyle">@style/Ownapp.Style.Toolbar.Primary</item>
+        <item name="badgeStyle">@style/Ownapp.Style.Badge</item>
+        <item name="recyclerViewStyle">@style/Ownapp.Style.RecyclerView</item>
+
+        <item name="textAppearanceButton">@style/Ownapp.TextAppearance.MaterialButton</item>
+        <item name="actionMenuTextAppearance">@style/Ownapp.TextAppearance.Menu</item>
+        <item name="actionMenuTextColor">?attr/colorOnPrimary</item>
+
+        <!-- View -->
+        <item name="nestedRecyclerStyle">@style/Ownapp.Style.RecyclerView</item>
+        <item name="quantityViewStyle">@style/Ownapp.Style.QuantityView</item>
+        <item name="otpEditTextStyle">@style/Ownapp.Style.OtpEditText</item>
+
+        <!-- Value -->
+        <item name="alertDialogPositiveButtonColor">@color/blue_600</item>
+        <item name="alertDialogNegativeButtonColor">?android:textColorTertiary</item>
+        <item name="badgeFrameSize">1dp</item>
+    </style>
+
+    <!-- Theme -->
+    <style name="Ownapp.ThemeOverlay.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
+    </style>
+
+
+    <style name="Ownapp.ThemeOverlay.MaterialCalendar" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorOnPrimary">@color/primary_text_default_material_dark</item>
+
+        <item name="android:animateLayoutChanges">false</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.FilledBox</item>
+    </style>
+
+    <style name="Ownapp.ThemeOverlay.MaterialCalendar.Fullscreen" parent="ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
+        <item name="android:animateLayoutChanges">false</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.FilledBox</item>
+    </style>
+
+    <style name="Ownapp.Theme.DatePickerDialog.Holo" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:colorAccent">?attr/colorPrimary</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Style -->
+    <style name="Ownapp.Style.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">?attr/colorBackgroundFloating</item>
+        <item name="android:elevation">@dimen/design_appbar_elevation</item>
+        <item name="navigationIcon">?attr/homeAsUpIndicator</item>
+        <item name="navigationIconTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Ownapp.Style.Toolbar.Primary" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="navigationIcon">?attr/homeAsUpIndicator</item>
+        <item name="navigationIconTint">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Ownapp.Style.Toolbar.Transparent" parent="Ownapp.Style.Toolbar">
+        <item name="android:background">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="Ownapp.Style.MaterialButton.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">@dimen/view_padding</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="iconSize">@dimen/size_icon</item>
+    </style>
+
+    <style name="Ownapp.Style.Badge" parent="Widget.MaterialComponents.Badge">
+        <item name="android:textAllCaps">false</item>
+        <item name="badgeTextColor">?attr/colorOnNotification</item>
+        <item name="backgroundColor">?attr/colorNotification</item>
+    </style>
+
+    <style name="Ownapp.Style.RecyclerView" parent="">
+        <item name="android:animateLayoutChanges">false</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <!-- Text Appearance -->
+    <style name="Ownapp.TextAppearance.MaterialButton" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Ownapp.TextAppearance.Menu" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="tint">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Ownapp.TextAppearance.Badge" parent="TextAppearance.MaterialComponents.Badge">
+        <item name="android:textColor">?attr/colorOnNotification</item>
+    </style>
+
+    <!-- Carrot View -->
+    <style name="Ownapp.Style.QuantityView" parent="">
+        <item name="textMargin">@dimen/view_padding</item>
+        <item name="textBackground">@drawable/selector_shape_square</item>
+    </style>
+
+    <style name="Ownapp.Style.OtpEditText" parent="">
+        <item name="android:padding">@dimen/view_padding</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline6</item>
+        <item name="chainStyle">packed</item>
+        <item name="space">@dimen/view_padding</item>
+        <item name="textPaddingVertical">@dimen/surface_padding</item>
+    </style>
+
+    <!-- Util -->
+    <style name="ClickableView">
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ClickableView.Circular" parent="ClickableView">
+        <item name="android:background">@drawable/ripple_circular</item>
+        <item name="android:foreground">@null</item>
+    </style>
+
+    <style name="ClickableView.Borderless" parent="ClickableView">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:foreground">@null</item>
+    </style>
+
+    <style name="FakeShadowBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:foreground">@drawable/shape_gradient_shadow</item>
+    </style>
+
+    <!-- Animation -->
+    <style name="Animation.Fade" parent="">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="Animation.Slide.Up" parent="">
+        <item name="android:windowEnterAnimation">@anim/slide_in_down</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="Animation.Slide.Down" parent="">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_up</item>
+    </style>
+
+    <style name="Animation.Slide.Left" parent="">
+        <item name="android:windowEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <style name="Animation.Slide.Right" parent="">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- View -->
+
+    <!--        <item name="android:datePickerDialogTheme" tools:ignore="NewApi">@style/Ownapp.DatePickerDialogTheme</item>-->
+
+
+    <!--    <style name="Ownapp.MaterialCalendarTheme" parent="android:Theme.Material.Light.Dialog">-->
+    <!--        <item name="android:colorPrimary">?attr/colorPrimary</item>-->
+    <!--        <item name="android:colorPrimaryDark">?attr/colorPrimaryVariant</item>-->
+    <!--        <item name="android:colorAccent">?attr/colorPrimary</item>-->
+
+    <!--        <item name="android:animateLayoutChanges">false</item>-->
+
+    <!--        <item name="android:windowBackground">@color/transparent</item>-->
+    <!--        <item name="android:windowContentOverlay">@null</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="Ownapp.MaterialCalendarStyle" parent="Theme.MaterialComponents.Light">-->
+    <!--        <item name="android:animateLayoutChanges">false</item>-->
+
+    <!--        <item name="android:windowBackground">@color/transparent</item>-->
+    <!--        <item name="android:windowContentOverlay">@null</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="Ownapp.Style.MaterialButton.Full" parent="Widget.MaterialComponents.Button.UnelevatedButton">-->
+    <!--        <item name="android:insetTop">0dp</item>-->
+    <!--        <item name="android:insetBottom">0dp</item>-->
+    <!--        <item name="cornerRadius">0dp</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="Ownapp.Style.MaterialButton.Full.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">-->
+    <!--        <item name="android:insetTop">0dp</item>-->
+    <!--        <item name="android:insetBottom">0dp</item>-->
+    <!--        <item name="cornerRadius">0dp</item>-->
+    <!--    </style>-->
+
+<!--    <style name="MaterialButton.Outlined.Left" parent="Widget.MaterialComponents.Button.OutlinedButton">-->
+<!--        <item name="shapeAppearanceOverlay">@style/Material.ShapeAppearance.Left</item>-->
+<!--    </style>-->
+
+<!--    <style name="MaterialButton.Right" parent="Widget.MaterialComponents.Button.UnelevatedButton">-->
+<!--        <item name="shapeAppearanceOverlay">@style/Material.ShapeAppearance.Right</item>-->
+<!--    </style>-->
+
+<!--    <style name="Material.ShapeAppearance.Left" parent="">-->
+<!--        <item name="cornerSizeTopLeft">@dimen/shape_radius</item>-->
+<!--        <item name="cornerSizeBottomLeft">@dimen/shape_radius</item>-->
+<!--        <item name="cornerSizeTopRight">0dp</item>-->
+<!--        <item name="cornerSizeBottomRight">0dp</item>-->
+<!--    </style>-->
+
+<!--    <style name="Material.ShapeAppearance.Right" parent="">-->
+<!--        <item name="cornerSizeTopLeft">0dp</item>-->
+<!--        <item name="cornerSizeBottomLeft">0dp</item>-->
+<!--        <item name="cornerSizeTopRight">@dimen/shape_radius</item>-->
+<!--        <item name="cornerSizeBottomRight">@dimen/shape_radius</item>-->
+<!--    </style>-->
+</resources>

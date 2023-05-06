@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Data -->
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ownapp.core.view.fragment.recycler.PagedListViewModel"/>
+    </data>
+
+    <!-- Layout-->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:progressSpinnerColor="@{android.R.attr.colorPrimary}"
+        app:onPulledToRefresh="@{() -> viewModel.reset()}"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/content_paged_recycler"
+            android:id="@+id/content_paged_recycler"
+            app:viewModel="@{viewModel}"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

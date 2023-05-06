@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Padding -->
+    <dimen name="view_padding_s">4dp</dimen>
+    <dimen name="view_padding">8dp</dimen>
+    <dimen name="view_padding_l">12dp</dimen>
+    <dimen name="surface_padding">16dp</dimen>
+    <dimen name="view_margin_large">24dp</dimen>
+
+    <dimen name="activity_padding">20dp</dimen>
+    <dimen name="activity_padding_l">28dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevation_app_bar">4dp</dimen>
+    <dimen name="elevation_menu">8dp</dimen>
+
+    <!-- Shape -->
+    <dimen name="shape_radius">4dp</dimen>
+    <dimen name="shape_stroke_width">2dp</dimen>
+
+    <!-- Size -->
+    <dimen name="height_button">60dp</dimen>
+    <dimen name="height_text_bar">44dp</dimen>
+    <dimen name="height_bar_view">52dp</dimen>
+
+    <dimen name="size_image_profile">64dp</dimen>
+    <dimen name="size_image_profile_medium">96dp</dimen>
+    <dimen name="size_image_profile_large">120dp</dimen>
+
+    <dimen name="size_icon_smaller">16dp</dimen>
+    <dimen name="size_icon_small">20dp</dimen>
+    <dimen name="size_icon">24dp</dimen>
+    <dimen name="size_button_small">28dp</dimen>
+    <dimen name="size_button">32dp</dimen>
+    <dimen name="size_button_medium">48dp</dimen>
+    <dimen name="size_button_large">56dp</dimen>
+</resources>

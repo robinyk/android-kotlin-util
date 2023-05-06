@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Data -->
+    <data>
+        <import type="android.text.TextUtils"/>
+        <import type="android.view.View"/>
+
+        <variable
+            name="imageDrawable"
+            type="android.graphics.drawable.Drawable"/>
+
+        <variable
+            name="text"
+            type="String"/>
+
+        <variable
+            name="buttonText"
+            type="String"/>
+
+        <variable
+            name="listener"
+            type="View.OnClickListener" />
+    </data>
+
+    <!-- Layout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/empty_recycler_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <!-- Image -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/empty_recycler_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding"
+            android:adjustViewBounds="true"
+            android:src="@{imageDrawable}"
+            app:tint="?attr/colorControlNormal"
+            app:layout_constraintWidth_percent="0.4"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/empty_recycler_text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <!-- Text -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/empty_recycler_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding"
+            android:layout_marginBottom="@dimen/activity_padding"
+            android:layout_marginStart="@dimen/activity_padding"
+            android:layout_marginEnd="@dimen/activity_padding"
+            android:gravity="center"
+            android:text="@{text ?? @string/msg_no_related_information, default=@string/msg_no_related_information}"
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorHint"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:letterSpacing="0"
+            app:layout_constraintTop_toBottomOf="@id/empty_recycler_image_view"
+            app:layout_constraintBottom_toTopOf="@id/empty_recycler_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="@{text ?? @string/msg_no_related_information, default=@string/msg_no_related_information}"/>
+
+        <!-- Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/empty_recycler_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_padding"
+            android:text="@{buttonText ?? ``}"
+            android:onClick="@{(view) -> listener.onClick(view)}"
+            android:visibility="@{!TextUtils.isEmpty(buttonText), default=gone}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="@{buttonText ?? ``}"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

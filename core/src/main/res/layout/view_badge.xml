@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/badge_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:background="@drawable/shape_rectangle_badge_frame">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/badge_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="@dimen/view_padding_s"
+        android:paddingEnd="@dimen/view_padding_s"
+        android:textColor="?attr/colorOnNotification"
+        android:textAppearance="@style/Ownapp.TextAppearance.Badge"
+        android:background="@drawable/shape_rectangle_badge"
+        android:focusable="false"/>
+
+</FrameLayout>

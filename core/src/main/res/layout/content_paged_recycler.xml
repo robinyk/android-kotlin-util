@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Data -->
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ownapp.core.view.fragment.recycler.PagedListViewModel"/>
+    </data>
+
+    <!-- Layout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Recycler -->
+        <com.ownapp.core.view.recycler.NestedRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:overScrollMode="ifContentScrolls"
+            android:nestedScrollingEnabled="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:emptyViewId="@{@id/empty_container}"
+            app:onScrolledToBottom="@{(page) -> viewModel.fetchPagedList(page)}"
+            app:resetLoadingState="@{viewModel.isResetLoadingState}"/>
+
+        <!-- Empty Container -->
+        <include layout="@layout/layout_recycler_empty"
+            android:id="@+id/empty_container"/>
+
+        <!-- Shimmer -->
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_auto_start="true"/>
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_login">เข้าสู่ระบบ</string>
+    <string name="text_login_id">บัญชีเข้าสู่ระบบ</string>
+    <string name="text_password">รหัสผ่าน</string>
+    <string name="text_logout">ออกจากระบบ</string>
+</resources>

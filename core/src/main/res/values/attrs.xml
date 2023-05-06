@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- View -->
+    <attr name="colorToolbar" format="color" />
+    <attr name="colorOnToolbar" format="color" />
+
+    <attr name="colorBackground" format="color" />
+    <attr name="colorBackgroundGrey" format="color" />
+
+    <!-- Information -->
+    <attr name="colorAlert" format="color" />
+    <attr name="colorSuccess" format="color" />
+    <attr name="colorWarning" format="color" />
+
+    <attr name="colorNotification" format="color" />
+    <attr name="colorOnNotification" format="color" />
+
+    <!-- View -->
+    <attr name="nestedRecyclerStyle" format="reference" />
+    <attr name="quantityViewStyle" format="reference" />
+    <attr name="otpEditTextStyle" format="reference" />
+    <attr name="loadingOverlayStyle" format="reference" />
+
+    <!-- Value -->
+    <attr name="alertDialogPositiveButtonColor" format="boolean"/>
+    <attr name="alertDialogNegativeButtonColor" format="boolean"/>
+    <attr name="badgeFrameSize" format="dimension"/>
+
+    <!--                       -->
+    <!-- Custom View Attribute -->
+    <!--                       -->
+    <declare-styleable name="GlobalAttr">
+        <attr name="defaultValue" format="string|boolean|integer|reference|float" />
+
+        <attr name="spacingDecor" format="dimension"/>
+        <attr name="dividerDecor" format="enum">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+
+        <attr name="widthRatio" format="float"/>
+        <attr name="heightRatio" format="float"/>
+        <attr name="ratio" format="string"/>
+        <attr name="minRatio" format="string"/>
+        <attr name="maxRatio" format="string"/>
+
+        <attr name="multiLineTreatment" format="boolean"/>
+
+        <attr name="isScrollable" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Binding Adapters -->
+    <declare-styleable name="LinearLayout">
+        <attr name="itemLayout" format="reference"/>
+        <attr name="entries" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="View">
+        <attr name="tooltipText" format="string" localization="suggested"/>
+        <attr name="selected" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppCompatImageView">
+        <attr name="signature" format="string"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="placeholder" format="reference"/>
+        <attr name="placeholderTint" format="color|reference"/>
+        <attr name="circleCrop" format="boolean"/>
+        <attr name="crossFade" format="boolean"/>
+        <attr name="showLoading" format="boolean"/>
+        <attr name="autoResize" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialToolbar">
+        <attr name="homeAsUp" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialTextView">
+        <attr name="underline" format="boolean"/>
+        <attr name="strikeThrough" format="boolean"/>
+        <attr name="prefixText"/>
+        <attr name="suffixText"/>
+        <attr name="withSpace" format="boolean"/>
+        <attr name="prettyCount" format="integer"/>
+        <attr name="prettyChineseCount" format="integer"/>
+        <attr name="price" format="string"/>
+        <attr name="currency" format="string"/>
+        <attr name="onClickSpan" format="reference"/>
+        <attr name="spanClickRegex" format="string"/>
+        <attr name="spanTextColor" format="color"/>
+        <attr name="spanTextUnderline" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="EditText">
+        <attr name="multiLineTreatment"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextInputEditText">
+        <attr name="hint" format="string"/>
+        <attr name="label" format="string"/>
+        <attr name="multiLineTreatment"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialAutoCompleteTextView">
+        <attr name="dropDownList" format="reference"/>
+        <attr name="defaultValue"/>
+        <attr name="defaultText" format="string"/>
+        <attr name="forceDefault" format="boolean"/>
+        <attr name="onItemSelected" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecyclerView">
+        <attr name="spacingDecor"/>
+        <attr name="dividerDecor"/>
+    </declare-styleable>
+
+    <declare-styleable name="Badge">
+        <attr name="android:textAllCaps" format="boolean"/>
+    </declare-styleable>
+
+    <!-- View -->
+    <declare-styleable name="AspectRatioFrameLayout">
+        <attr name="widthRatio"/>
+        <attr name="heightRatio"/>
+        <attr name="ratio"/>
+        <attr name="minRatio"/>
+        <attr name="maxRatio"/>
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="widthRatio"/>
+        <attr name="heightRatio"/>
+        <attr name="ratio"/>
+    </declare-styleable>
+
+    <declare-styleable name="DisabledScrollView">
+        <attr name="isScrollable"/>
+    </declare-styleable>
+
+    <declare-styleable name="NestedRecyclerView">
+        <attr name="visibleThreshold" format="integer"/>
+        <attr name="onScrolledToBottom" format="reference"/>
+        <attr name="resetLoadingState" format="boolean"/>
+        <attr name="isNestedScroll" format="boolean"/>
+
+        <attr name="emptyViewId" format="reference"/>
+        <attr name="showEmpty" format="boolean"/>
+        <attr name="isScrollable"/>
+        <attr name="pagerSnap" format="enum">
+            <enum name="onScroll" value="0"/>
+            <enum name="onSettled" value="1"/>
+        </attr>
+        <attr name="spacingDecor"/>
+        <attr name="dividerDecor"/>
+        <attr name="ratio"/>
+        <attr name="minRatio"/>
+        <attr name="maxRatio"/>
+    </declare-styleable>
+
+    <declare-styleable name="QuantityView">
+        <attr name="defaultValue"/>
+        <attr name="min" format="integer"/>
+        <attr name="max" format="integer"/>
+
+        <attr name="editable" format="boolean"/>
+        <attr name="textEditable" format="boolean"/>
+
+        <!-- Text -->
+        <attr name="android:text" />
+        <attr name="android:textAppearance" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:textStyle" />
+        <attr name="android:textAlignment" />
+        <attr name="android:letterSpacing" />
+        <attr name="android:minEms" />
+        <attr name="textMargin" format="dimension"/>
+        <attr name="textBackground" format="reference|color"/>
+        <attr name="textBackgroundTint" format="color"/>
+        <attr name="textBackgroundTintMode" format="enum">
+            <enum name="src_over" value="3"/>
+            <enum name="src_in" value="5"/>
+            <enum name="src_atop" value="9"/>
+            <enum name="multiply" value="14"/>
+            <enum name="screen" value="15"/>
+        </attr>
+
+        <!-- Start Icon -->
+        <attr name="startIconPadding" format="dimension"/>
+        <attr name="startIconDrawable"/>
+        <attr name="startIconContentDescription"/>
+        <attr name="startIconTint"/>
+        <attr name="startIconTintMode"/>
+
+        <!-- End Icon -->
+        <attr name="endIconPadding" format="dimension"/>
+        <attr name="endIconDrawable" />
+        <attr name="endIconContentDescription" />
+        <attr name="endIconTint" />
+        <attr name="endIconTintMode" />
+    </declare-styleable>
+
+    <declare-styleable name="OtpEditText">
+        <attr name="android:textAppearance" />
+        <attr name="android:inputType" />
+        <attr name="android:cursorVisible"/>
+        <attr name="chainStyle" format="enum">
+            <enum name="spread" value="0"/>
+            <enum name="spread_inside" value="1"/>
+            <enum name="packed" value="2"/>
+        </attr>
+        <attr name="space" format="dimension"/>
+        <attr name="otpLength" format="integer"/>
+        <attr name="textBackground"/>
+        <attr name="textBackgroundTint"/>
+        <attr name="textPadding" format="dimension"/>
+        <attr name="textPaddingVertical" format="dimension"/>
+        <attr name="textPaddingHorizontal" format="dimension"/>
+        <attr name="textLength" format="integer"/>
+        <attr name="textElevation" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoadingOverlay">
+        <attr name="android:tint" />
+        <attr name="android:tintMode" />
+        <attr name="loadingType" format="enum">
+            <enum name="material" value="0"/>
+            <enum name="animation" value="1"/>
+        </attr>
+        <attr name="animationResourceId" format="reference"/>
+        <attr name="widthPercent" format="float"/>
+    </declare-styleable>
+</resources>

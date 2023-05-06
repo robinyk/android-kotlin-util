@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_login_id">登入帳號</string>
+    <string name="text_password">密碼</string>
+    <string name="text_login">登入</string>
+    <string name="text_sign_up">註冊</string>
+    <string name="text_settings">設置</string>
+    <string name="text_other">其他</string>
+    <string name="text_mobile_no_short">手機號碼</string>
+    <string name="text_mobile_no">手機號碼</string>
+    <string name="text_logout">退出登入</string>
+    <string name="text_email">郵箱</string>
+    <string name="text_about">關於</string>
+    <string name="text_home">首頁</string>
+    <string name="text_inbox">消息</string>
+    <string name="text_more">更多</string>
+    <string name="text_save">保存</string>
+    <string name="text_edit">編輯</string>
+    <string name="text_user_name">用戶名</string>
+    <string name="text_profile_picture">頭像</string>
+    <string name="text_forgot_password">找回密碼</string>
+    <string name="text_edit_profile">編輯個人資料</string>
+    <string name="text_date">日期</string>
+    <string name="text_confirm">確定</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_back">返回</string>
+    <string name="text_all">全部</string>
+    <string name="text_quit">退出</string>
+    <string name="text_notifications">通知</string>
+</resources>
